@@ -37,5 +37,7 @@ Refer to the demonstration video posted in the [Review](#review).
 ## Review
 The walkthrough video that demonstrates application functionality: [video](https://drive.google.com/file/d/12sHeWmg6psycQgmYkoDlRiehKfoXoeU1/view)
 
+The URL of the functional, deployed application: [live project](https://challenge-note-taker.onrender.com/)
+
 ## Contact
 Contact me with any ideas or requests: akravt1274@gmail.com
