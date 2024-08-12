@@ -7,7 +7,8 @@ const noteRoutes = require('./routes/noteRoutes');
 // const notes = require('./db/db');
 
 // setup application server
-const PORT = 3001;
+// const PORT = 3001;
+const port = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.json());
@@ -52,12 +53,7 @@ app.get('/notes', (req, res) => {
 // Use note routes
 app.use(noteRoutes);
 
-// 404 page - to be at the bottom of the code
-// app.use((req, res) => {
-//   res.status(404).send("404 - Page not found");
-// });
-
 // run application on a server
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
+app.listen(port, () =>
+  console.log(`App listening at http://localhost:${port}`)
 );
