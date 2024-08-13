@@ -1,7 +1,20 @@
 # Note Taker
 
 ## Description
-In this challenge, I built an application called Note Taker that can be used to write, save and delete notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+In this challenge, I built the back end for an application called Note Taker, integrated it with front end, provided in the starter code, and deployed the entire application to Render. The Note Taker application can be used to write, save and delete notes.
+* Note: the front end code provided is buggy - to see the changes after adding a new note or deleting existing note, a user needs refresh the page.
+
+This application will use an Express.js back end and will store and retrieve notes from a JSON file on the back end.
+
+The following HTML routes were created:
+* GET /notes to return the notes.html file.
+* GET * to return the index.html file.
+
+The following API routes were created:
+* GET /api/notes to read the db.json file and return all saved notes as JSON.
+* POST /api/notes to receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. A unique id is given to each note when it's saved (using 'short-unique-id' npm package).
+* DELETE /api/notes/:id to receive a query parameter containing the id of a note to delete. 
+
 
 ## Table of Contents
 * [Installation](#installation)
@@ -37,7 +50,7 @@ Refer to the demonstration video posted in the [Review](#review).
 ## Review
 The walkthrough video that demonstrates application functionality: [video](https://drive.google.com/file/d/12sHeWmg6psycQgmYkoDlRiehKfoXoeU1/view)
 
-The URL of the functional, deployed application: [live project](https://challenge-note-taker.onrender.com/)
+The URL of the functional, deployed application: [live project](https://challenge-note-taker.onrender.com/). Note: POST and DELETE API routes work locally (refer to the video above) but not on Render server.
 
 ## Contact
 Contact me with any ideas or requests: akravt1274@gmail.com

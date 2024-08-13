@@ -2,12 +2,8 @@ const express = require('express');
 const path = require('path');
 
 const noteRoutes = require('./routes/noteRoutes');
-// const fs = require('fs');
-// const ShortUniqueId = require('short-unique-id');
-// const notes = require('./db/db');
 
 // setup application server
-// const PORT = 3001;
 const port = process.env.PORT || 3001;
 const app = express();
 
